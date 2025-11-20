@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
   
