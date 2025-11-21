@@ -1,7 +1,6 @@
 import { FaLaptopCode } from "react-icons/fa6";
 import React from "react";
 import Slider from "react-slick";
-import { BsHandIndexFill } from "react-icons/bs";
 const projects = [
   {
     name: "SMA BTP",
@@ -40,7 +39,7 @@ export default function Contact() {
     infinite: true,
     autoplay: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
   };
     return (
@@ -50,7 +49,7 @@ export default function Contact() {
         <Slider {...settings} className="mt-20 min-h-[200px] w-full">
           {projects.map((project, index) => (
             <div key={index} className="min-h-[200px]">
-              <div className="mx-10 min-h-[200px] rounded-tr-3xl rounded-bl-3xl p-4 bg-white shadow-xl flex flex-col">
+              <div className="mx-2 md:w-1/2 md:mx-[25%] min-h-[200px] rounded-tr-3xl rounded-bl-3xl p-4 bg-white shadow-xl flex flex-col">
                 <div className="p-8 rounded-lg flex items-center flex-col h-full">
                   <div className="flex items-center justify-center gap-2 mb-2">
                     <h3 className="text-xl font-semibold text-black">{project.name.toUpperCase()}</h3>
@@ -74,7 +73,6 @@ export default function Contact() {
                   )}
                   
                   <a
-                    key={BsHandIndexFill}
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"

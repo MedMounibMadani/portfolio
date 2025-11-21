@@ -4,10 +4,10 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="min-h-screen w-full flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white px-64"
+      className="min-h-screen w-full flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 md:px-64"
     >
     
-        <div className="w-1/2 mt-10 md:mt-0  flex justify-center">
+        <div className="md:w-1/2 my-10 md:mt-0 flex justify-center">
          <img
             src="/portfolio/images/mounib.png"
             alt="Profile"
@@ -23,7 +23,7 @@ export default function Home() {
             "
         />
       </div>
-      <div className="w-1/2 text-center md:text-left space-y-6">
+      <div className="md:w-1/2 text-center md:text-left space-y-6">
         <h1 className="text-5xl md:text-6xl font-bold">Hi, I’m Mounib</h1>
         <p className="text-lg md:text-xl text-white/90">
             I’m a <span className="font-bold">Full Stack Software Engineer</span> creating seamless and performant software solutions.

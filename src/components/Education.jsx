@@ -8,18 +8,21 @@ export default function Education() {
       field: "Software Engineering",
       institution: "ESPRIT, Tunis",
       year: "2025", 
+      file: "/portfolio/docs/ing.pdf"
     },
     {
       degree: "Bachelor’s Degree",
       field: "Computer Networks and Telecommunications",
       institution: "INSAT, Tunis",
       year: "2021",
+      file: "/portfolio/docs/lic.pdf"
     },
     {
       degree: "Baccalaureate",
-      field: "Sciences",
+      field: "Secondary school",
       institution: "Graduated with Honors",
       year: "2014",
+      file: "/portfolio/docs/bac.pdf"
     },
   ];
 
@@ -34,13 +37,19 @@ export default function Education() {
         {educationData.map((edu, index) => (
           <div
             key={index}
-            className="cursor-pointer p-1 rounded-3xl bg-gradient-to-r from-blue-500 to-purple-600 hover:scale-125 transform transition duration-300"
+            className="cursor-pointer p-1 rounded-tr-xl rounded-bl-xl bg-gradient-to-r from-blue-500 to-purple-600 hover:scale-105 transform transition duration-300"
           >
-            <div className="bg-white p-6 rounded-lg shadow-lg h-full">
+            <div className="bg-white p-6 rounded-lg shadow-lg h-full flex flex-col justify-center items-center">
               <h3 className="text-gray-900 text-xl font-semibold mb-2">{edu.degree}</h3>
-              <p className="text-black/90 m3-1">{edu.field}</p>
-              <p className="text-black-300 mb-1">{edu.institution}</p>
+              <p className="text-black/90 my-2">{edu.field}</p>
+              <p className="text-black/3 mb-1">{edu.institution}</p>
               {edu.year && <p className="text-black-400 text-sm">{edu.year}</p>}
+              <a
+                href={edu.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center text-white font-bold text-xl px-4 py-2 mt-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl shadow-lg hover:shadow-2xl"
+              >See diploma</a>
             </div>
           </div>
         ))}

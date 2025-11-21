@@ -104,9 +104,12 @@ export default function Experiences() {
     infinite: true,
     autoplay: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
+    dots: false,
   };
+  
     return (
       <section id="experiences" className="min-h-screen flex flex-col items-center justify-start bg-gray-100 text-gray-900 px-6 py-4">
         <MdWork size={40} />
@@ -114,7 +117,7 @@ export default function Experiences() {
         <Slider {...settings} className="min-h-[400px] w-full">
           {works.map((work, index) => (
             <div key={index} className="min-h-[400px]">
-              <div className="mx-10 min-h-[400px] rounded-tr-3xl rounded-bl-3xl p-4 bg-gradient-to-r from-blue-700 to-purple-700 shadow-xl flex flex-col">
+              <div className="mx-2 md:w-1/2 md:mx-[25%] min-h-[400px] rounded-tr-3xl rounded-bl-3xl p-4 bg-gradient-to-r from-blue-700 to-purple-700 shadow-xl flex flex-col">
                 <div className="p-8 rounded-lg flex flex-col h-full">
                   <div className="flex items-center justify-center gap-2 mb-2">
                     <h3 className="text-xl font-semibold text-white">{work.role.toUpperCase()}</h3>
