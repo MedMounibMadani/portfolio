@@ -102,12 +102,15 @@ const works = [
 export default function Experiences() {
   const settings = {
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    dots: false,
+    dots: true,
+    appendDots: dots => (
+      <ul style={{ margin: "0px" }}> {dots} </ul>
+    ),
   };
   
     return (

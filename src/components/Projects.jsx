@@ -35,12 +35,15 @@ const projects = [
 export default function Contact() {
   const settings = {
     arrows: false,
-    dots: false,
+    dots: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    appendDots: dots => (
+      <ul style={{ margin: "0px" }}> {dots} </ul>
+    ),
   };
     return (
       <section id="projects" className="min-h-screen flex flex-col items-center justify-start bg-gradient-to-r from-blue-500 to-purple-600 text-white  px-6 py-16">

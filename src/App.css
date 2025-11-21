@@ -19,6 +19,25 @@
 }
 
 
+#experiences .slick-dots li button:before {
+  font-size: 20px !important;
+  color: purple !important;
+}
+#experiences .slick-dots li.slick-active button {
+  color: purple !important;
+}
+
+#projects .slick-dots li button:before {
+  font-size: 20px !important;
+  color: wheat !important;
+}
+#projects .slick-dots li.slick-active button {
+  color: wheat !important;
+}
+.slick-dots {
+  bottom: -40px !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
