@@ -114,7 +114,7 @@ export default function Experiences() {
   };
   
     return (
-      <section id="experiences" className="min-h-screen flex flex-col items-center justify-start bg-gray-100 text-gray-900 px-6 py-4">
+      <section id="experiences" className="min-h-screen flex flex-col items-center justify-start bg-gray-100 text-gray-900 px-6 pt-4 pb-14">
         <MdWork size={40} />
         <h2 className="text-4xl font-bold mb-12">Experiences</h2>
         <Slider {...settings} className="min-h-[400px] w-full">

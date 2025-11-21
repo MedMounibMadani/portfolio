@@ -50,15 +50,15 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden min-h-screen flex flex-col bg-gray-800 p-4 gap-4">
-          <Link to="education" smooth={true} onClick={() => setIsOpen(false)} className="cursor-pointer text-xlp-2 font-bold hover:rounded-full hover:bg-white hover:text-black">Education</Link>
-          <Link to="experiences" smooth={true} onClick={() => setIsOpen(false)} className="cursor-pointer text-xlp-2 font-bold hover:rounded-full hover:bg-white hover:text-black">Experiences</Link>
-          <Link to="projects" smooth={true} onClick={() => setIsOpen(false)} className="cursor-pointer text-xlp-2 font-bold hover:rounded-full hover:bg-white hover:text-black">Projects</Link>
-          <Link to="contact" smooth={true} onClick={() => setIsOpen(false)} className="cursor-pointer text-xlp-2 font-bold hover:rounded-full hover:bg-white hover:text-black">Contact</Link>
+          <Link to="education" smooth={true} offset={-80}  onClick={() => setIsOpen(false)} className="cursor-pointer text-xlp-2 font-bold">Education</Link>
+          <Link to="experiences" smooth={true} offset={-80}  onClick={() => setIsOpen(false)} className="cursor-pointer text-xlp-2 font-bold">Experiences</Link>
+          <Link to="projects" smooth={true} offset={-80} onClick={() => setIsOpen(false)} className="cursor-pointer text-xlp-2 font-bold">Projects</Link>
+          <Link to="contact" smooth={true} offset={-80} onClick={() => setIsOpen(false)} className="cursor-pointer text-xlp-2 font-bold">Contact</Link>
           <a
             href="/portfolio/docs/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center cursor-pointer text-xl px-4 py-2 hover:rounded-full hover:bg-white hover:text-black font-semibold bg-gradient-to-r from-blue-500 to-purple-600 "
+            className="flex items-center justify-center cursor-pointer text-xl px-4 py-2 rounded-full font-semibold bg-gradient-to-r from-blue-500 to-purple-600 "
           >
             <FaFilePdf size={20} className="mr-2" />
             Resume
