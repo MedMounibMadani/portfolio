@@ -29,6 +29,20 @@ const projects = [
     url: "https://fast.axesslogistique.com/",
     image: "",
     technologies: ["React", "Node.js", "Symfony", "NestJs", "Docker", "Mysql", "AWS"]
+  },
+  {
+    name: "Smart Home",
+    description: "A cross platfome mobile application built with react native offering the ability for users to nables users to efficiently control and manage a variety of connected devices at home or in the office through an intuitive and user-friendly interface.",
+    url: "https://github.com/MedMounibMadani/smart-home-back",
+    image: "",
+    technologies: ["React Native", "JavaScript", "Docker", "MongoDB"]
+  },
+  {
+    name: "E-Shop",
+    description: "E-commerce platform featuring product catalog, search and filtering, shopping cart, secure checkout, and order management. Built with a modern web stack, responsive design, and REST APIs, with emphasis on performance, scalability, and user experience.",
+    url: "https://github.com/MedMounibMadani/store",
+    image: "",
+    technologies: ["Laravel", "JavaScript", "Docker", "Mysql", "Stripe"]
   }
 ];
 
