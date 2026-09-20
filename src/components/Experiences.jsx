@@ -6,7 +6,8 @@ import Slider from "react-slick";
 const works = [
   {
     "role": "FOUNDER & CTO",
-    "company": "<a href='https://mecanoauto.tn' target='_blank' rel='noopener noreferrer'>Mecano</a>",
+    "company": "Mecano",
+    "companyUrl": "https://mecanoauto.tn",
     "location": "Tunis, TUNISIA",
     "period": "Aug 2026 to Present",
     "description": [
@@ -140,7 +141,16 @@ export default function Experiences() {
                   <div className="flex items-center justify-center gap-2 mb-2">
                     <h3 className="text-xl font-semibold text-white">{work.role.toUpperCase()}</h3>
                   </div>
-                  <p className="text-white/70 mb-1 font-medium">{work.company} - {work.location}</p>
+                  <p className="text-white/70 mb-1 font-medium">
+                  {
+                    work.companyUrl ? (
+                      <a href={work.companyUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                        {work.company}
+                      </a>
+                    ) : (
+                      work.company
+                    )
+                  } - {work.location}</p>
                   <p className="text-white/50 text-sm mb-4">{work.period}</p>
 
                   <ul className="list-none list-inside text-white/80 mb-4 space-y-1 flex-1">
