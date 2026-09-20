@@ -5,16 +5,31 @@ import Slider from "react-slick";
 
 const works = [
   {
-    "role": "Engineer - Fullstack Developer",
+    "role": "FOUNDER & CTO",
+    "company": "<a href='https://mecanoauto.tn' target='_blank' rel='noopener noreferrer'>Mecano</a>",
+    "location": "Tunis, TUNISIA",
+    "period": "Aug 2026 to Present",
+    "description": [
+      "Founded and lead the technical development of Mecano, a digital platform connecting customers with on-demand automotive service professionals.",
+      "Designed and developed the platform architecture using Next.js, TypeScript, MongoDB, Redis, and Docker.",
+      "Built core features including user authentication, appointment booking, payments, notifications, messaging, and mechanic management.",
+      "Designed backend services and asynchronous job processing using Node.js, Redis, and BullMQ.",
+      "Managed deployment, server infrastructure, security, and production operations.",
+      "Implemented SEO, performance, and security practices for a production-ready web platform."
+    ],
+    "technologies": ["Next.js 16", "MongoDB", "Redis", "BullMQ", "NodeJS", "TypeScript", "Mongoose", "Docker", "GitHub"]
+  },
+  {
+    "role": "CTO - Lead Software Engineer",
     "company": "Axess Logistique",
     "location": "Tunis, TUNISIA",
-    "period": "Since Oct 2025",
+    "period": "Oct 2025 to Aug 2026",
     "description": [
-      "Participated in the design and development of a logistics management application used by multiple agencies and partners, handling several thousand daily transactions.",
-      "Contributed to software architecture, backend performance optimization, and the reliability of communication between microservices.",
+      "Led the development of a multi-faceted system comprising a core Transport Management System (TMS), a modern Warehouse Management System (WMS)",
+      "Ensured high availability, security, and scalability by containerizing applications with Docker and deploying across DigitalOcean infrastructure.",
       "Collaborated with product, DevOps, and data teams to ensure system scalability, security, and high availability."
     ],
-    "technologies": ["Php 7.4", "Symfony 5", "React v19", "MySQL", "Docker", "GitHub", "AWS"]
+    "technologies": ["NestJS", "Php 7.4", "Symfony", "React v19", "PostgreSQL", "Redis", "NodeJS", "TypeScript", "Prisma", "Docker", "GitHub", ]
   },
   {
     "role": "Internship - Fullstack Developer",

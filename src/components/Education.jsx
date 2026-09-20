@@ -48,8 +48,8 @@ export default function Education() {
                 href={edu.file}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center text-white font-bold text-xl px-4 py-2 mt-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl shadow-lg hover:shadow-2xl"
-              >See diploma</a>
+                className="text-center text-white font-bold text-base px-4 py-2 mt-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl shadow-lg hover:shadow-2xl"
+              >See Diploma</a>
             </div>
           </div>
         ))}

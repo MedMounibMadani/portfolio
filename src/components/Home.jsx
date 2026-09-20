@@ -26,7 +26,7 @@ export default function Home() {
       <div className="md:w-1/2 text-center md:text-left space-y-6">
         <h1 className="text-5xl md:text-6xl font-bold">Hi, I’m Mounib</h1>
         <p className="text-lg md:text-xl text-white/90">
-            I’m a <span className="font-bold">Full Stack Software Engineer</span> creating seamless and performant software solutions.
+            I’m a <span className="font-bold">Auto-Entrepreneur and Full Stack Software Engineer</span> creating seamless and performant software solutions.
         </p>
         <TechStack />
         <div className="flex justify-center mt-8">

@@ -3,6 +3,13 @@ import React from "react";
 import Slider from "react-slick";
 const projects = [
   {
+    name: "Mecano",
+    description: "A digital platform connecting customers with on-demand automotive service professionals, offering a seamless experience for booking and managing car maintenance and repair services.",
+    url: "https://mecanoauto.tn",
+    image: "",
+    technologies: ["Next.js 16", "MongoDB", "Redis", "BullMQ", "NodeJS", "TypeScript", "Mongoose", "Docker", "GitHub"]
+  },
+  {
     name: "SMA BTP",
     description: "Insurance platform for SMA BTP, A leading French insurance group specializing in construction and real estate, providing professional liability, property, and business insurance solutions for companies and individuals.",
     url: "https://www.smabtp.fr/sma/assurance/",
@@ -24,11 +31,18 @@ const projects = [
     technologies: ["Laravel", "Vue", "Blade", "HTML5", "CSS3", "JavaScript", "Mysql", "Docker", "AWS" ]
   },
   {
-    name: "Axess Logistique",
-    description: "Fast logistic web application for Axess Logistique, A logistics management platform designed to optimize deliveries, returns, and pickups, providing real-time tracking and multi-agency coordination.",
+    name: "Axess TMS",
+    description: "A transport management platform designed to optimize deliveries, returns, payments and pickups, providing real-time tracking and multi-agency coordination.",
     url: "https://fast.axesslogistique.com/",
     image: "",
-    technologies: ["React", "Node.js", "Symfony", "NestJs", "Docker", "Mysql", "AWS"]
+    technologies: ["PHP", "Symfony", "Twig", "React", "Docker", "PostgreSQL"]
+  },
+  {
+    name: "Axess WMS",
+    description: "A warehouse management platform designed to optimize inventory management, order fulfillment, and logistics operations.",
+    url: "https://fast.axesslogistique.com/",
+    image: "",
+    technologies: ["NestJS", "NodeJS", "TypeScript", "React", "Wobsocket", "Docker", "PostgreSQL"]
   },
   {
     name: "Smart Home",
